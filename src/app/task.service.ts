@@ -8,7 +8,7 @@ import {catchError, map, tap, Observable, of} from "rxjs";
   providedIn: 'root'
 })
 export class TaskService {
-  private tasksURL = 'https://task-server-4wqn.onrender.com/tasks';  // URL to web api
+  private tasksURL = 'http://localhost:3000';  // URL to web api
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
